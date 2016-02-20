@@ -1,0 +1,13 @@
+/* General */
+*:focus {
+  outline: none !important;
+}
+/* Navbar */
+.navbar {
+  border-radius: 0;
+}
+/* Page Content */
+.starter-template {
+  padding: 40px 15px;
+  text-align: center;
+}
