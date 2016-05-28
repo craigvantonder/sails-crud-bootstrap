@@ -33,10 +33,23 @@ module.exports.routes = {
   ***************************************************************************/
 
   '/': {
-    view: 'homepage'
+    controller: 'PublicController',
+    action: 'showLanding'
   },
+
   '/latest': {
-    view: 'latest'
+    controller: 'LatestController',
+    action: 'showLatestPosts'
+  },
+
+  '/login': {
+    controller: 'AuthController',
+    action: 'login'
+  },
+
+  '/logout': {
+    controller: 'AuthController',
+    action: 'logout'
   }
 
   /***************************************************************************

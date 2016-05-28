@@ -1,8 +1,7 @@
 <!-- PAGE NAVIGATION -->
 <%- partial('./partials/navigation.ejs', { type: 'latest' })%>
 
-<!-- PAGE SPECIFIC SCRIPTS -->
-<%- block('pageScripts', '<script src="/js/pages/latest.js"></script>') %>
+<%- partial('./partials/extras.ejs') %>
 
 <!-- PAGE CONTENT -->
 <div class="container">

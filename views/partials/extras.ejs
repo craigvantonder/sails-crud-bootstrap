@@ -1,0 +1,8 @@
+<% if (typeof extras !== 'undefined') { %>
+  <% if (typeof extras.styles !== 'undefined') { %>
+    <% block('pageStyles', extras.styles) %>
+  <% } %>
+  <% if (typeof extras.scripts !== 'undefined') { %>
+    <% block('pageScripts', extras.scripts) %>
+  <% } %>
+<% } %>

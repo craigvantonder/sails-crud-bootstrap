@@ -1,8 +1,7 @@
 <!-- PAGE NAVIGATION -->
 <%- partial('./partials/navigation.ejs', { type: 'home' })%>
 
-<!-- PAGE SPECIFIC SCRIPTS -->
-<%- block('pageScripts', '<script src="/js/pages/homepage.js"></script>') %>
+<%- partial('./partials/extras.ejs') %>
 
 <!-- PAGE CONTENT -->
 <div class="container">

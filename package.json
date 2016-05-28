@@ -5,6 +5,7 @@
   "description": "An example on using jQuery and Bootstrap to create a simple blog in the Sails Framework.",
   "keywords": [],
   "dependencies": {
+    "bcrypt": "^0.8.6",
     "bootstrap": "^3.3.6",
     "commander": "^2.9.0",
     "ejs": "2.3.4",
@@ -22,6 +23,8 @@
     "grunt-sync": "0.2.4",
     "include-all": "~0.1.6",
     "jquery": "^2.2.0",
+    "passport": "^0.3.2",
+    "passport-local": "^1.0.0",
     "rc": "1.0.1",
     "sails": "~0.12.1",
     "sails-disk": "~0.10.9"
