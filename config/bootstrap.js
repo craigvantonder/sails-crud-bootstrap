@@ -11,6 +11,10 @@
 
 module.exports.bootstrap = function(cb) {
 
+	// Pre-define the apps url for use throughout the application
+	// http://sailsjs.org/documentation/reference/application/sails-get-base-url
+	sails.config.appUrl = 'http://sails.dev';
+
   // It's very important to trigger this callback method when you are finished
   // with the bootstrap!  (otherwise your server will never lift, since it's waiting on the bootstrap)
   cb();
