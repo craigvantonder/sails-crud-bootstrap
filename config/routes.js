@@ -42,7 +42,11 @@ module.exports.routes = {
     action: 'showLatestPosts'
   },
 
-  '/login': {
+  'get /login': {
+    view: 'login'
+  },
+
+  'post /login': {
     controller: 'AuthController',
     action: 'login'
   },
@@ -50,6 +54,10 @@ module.exports.routes = {
   '/logout': {
     controller: 'AuthController',
     action: 'logout'
+  },
+
+  'get /signup': {
+    view: 'signup'
   }
 
   /***************************************************************************

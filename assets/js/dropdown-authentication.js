@@ -1,9 +1,3 @@
-/**
- * @dropdown-authentication.js A simple navigation dropdown login / registration form for Boostrap.
- * @author Craig van Tonder
- * @version 0.0.0
- */
-
 $(document).ready(function() {
 
   // Contains information relating to the component element selectors

@@ -1,0 +1,16 @@
+<!-- PAGE NAVIGATION -->
+<%- partial('./partials/navigation.ejs', { type: 'home' })%>
+
+<%- partial('./partials/extras.ejs') %>
+
+<!-- PAGE CONTENT -->
+<div class="container">
+
+  <h1>Signup</h1>
+  <form method="POST" action="/user">
+    <input type="email" name="email">
+    <input type="password" name="password">
+    <input type="submit" value="submit">
+  </form>
+
+</div><!-- /.container -->

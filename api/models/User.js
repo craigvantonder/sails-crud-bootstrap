@@ -5,18 +5,18 @@
  * @docs        :: http://sailsjs.org/documentation/concepts/models-and-orm/models
  */
 
-var bcrypt = require('bcrypt');
- 
-module.exports = {
- 
+ var bcrypt = require('bcrypt');
+
+ module.exports = {
   attributes: {
-    username: {
-      type: 'string',
+    email: {
+      type: 'email',
       required: true,
       unique: true
     },
     password: {
       type: 'string',
+      minLength: 6,
       required: true
     },
     toJSON: function() {
@@ -25,19 +25,18 @@ module.exports = {
       return obj;
     }
   },
- 
   beforeCreate: function(user, cb) {
     bcrypt.genSalt(10, function(err, salt) {
       bcrypt.hash(user.password, salt, function(err, hash) {
         if (err) {
           console.log(err);
           cb(err);
-        }else{
+        } else {
           user.password = hash;
-          cb(null, user);
+          cb();
         }
       });
     });
   }
- 
 };
+

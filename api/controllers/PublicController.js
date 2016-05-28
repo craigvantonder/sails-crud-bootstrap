@@ -9,6 +9,8 @@ module.exports = {
 
 	showLanding: function (req, res) {
 
+		console.log(req.session);
+
 		// extras = {};
 		// extras.styles = '<link rel="stylesheet" href="' + sails.config.appUrl + '/assets/nolink/styles/example1.css">' +
 		// 								 '<link rel="stylesheet" href="' + sails.config.appUrl + '/assets/nolink/styles/example2.css">';

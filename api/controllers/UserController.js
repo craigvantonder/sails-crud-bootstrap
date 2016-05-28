@@ -1,7 +1,7 @@
 /**
- * PostController
+ * UserController
  *
- * @description :: Server-side logic for managing posts
+ * @description :: Server-side logic for managing users
  * @help        :: See http://sailsjs.org/#!/documentation/concepts/Controllers
  */
 
